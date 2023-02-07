@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan',sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: black;
+}
+h2{
+    font-size: 50px;
+    color: black;
+}
+h4{
+    font-size: 20px;
+    color: black;
+}
+h6{
+  font-weight: 700;
+  font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    margin: 40px 0;
+}
+body{
+    width: 100%;
+}
+
+/*Header Start css properties*/
+
+#header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding:40px 70px;
+    background:#e4cbbd;
+    box-shadow: 0 10px 25px rgba(0,0,0,0);
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+#header a{
+    height: 25px;
+}
+#navbar{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+    color:black;
+    transition: 0.3s ease;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:white;
+}
+#hero{
+    background-image: url("istockphoto-1284691550-612x612.jpg");
+    font-size: 20px;
+    height: 90vh;
+    width: 100%;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center; 
+}
+#hero h4{
+    padding-bottom: 5px;
+}
+#hero h1{
+    color:darkorange;
+}
+#hero button{
+    background-color:#088178;
+    color:orange;
+    border-radius: 5px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border: none;
+    width: 150px;
+    height: 40px;
+}
+#hero button:hover{
+    background-color: white;
+    color:green;
+    border: 1px solid green;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+
+
+#product1{
+    text-align: center;
+}
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 23%;
+    min-width: 25px;
+    padding: 10px 12px;
+    border:1px solid #cde7d0 ;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.03);
+    margin: 15px 0;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+#product1 .pro .des span{
+    font-size: 12px;
+    color: #606063;
+}
+#product1 .pro .des  h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+    color: black;
+}
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(243, 181,25);
+}
+#product1 .pro .des h4{
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url("https://th.bing.com/th/id/R.a8820040825217fff640048afa3be967?rik=Op0U3jxe9Fq9mg&pid=ImgRaw&r=0");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+#banner h4{
+    color:white;
+    font-size:20px;
+}
+#banner h2{
+    color:white;
+    font-size:50px;
+    font-weight: 550;
+    padding: 10px 0;
+}
+#banner h2 span{
+    color:red;
+}
+#banner .normal{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 25px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+    outline: none;
+}
+#banner .normal:hover{
+    background-color: #088178;
+    color: white;
+}
+
+
+
+
+#newsletter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("assets/img/banner/b14.png");
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+
+}
+#newsletter h4{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+#newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(172, 172, 173, 0.856);
+}
+#newsletter p span{
+    color: orange;
+}
+#newsletter .form{
+    display: flex;
+    width: 400;
+}
+#newsletter input{
+    height: 3.100rem;
+    padding: 0 2.125rem;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: white;
+    white-space: nowrap;
+    height: 3.125rem;
+    padding: 0 2.125rem;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    color: black;
+}
+
+footer.logo{
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+footer.h4{
+    font-size: 16px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    color: black;
+    
+}
+footer p{
+    font-size: 16px;
+    margin: 0 0 8px 0 ;
+    color: black;
+}
+footer a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color:black;
+    margin-bottom: 7px;
+}
+footer a:hover{
+    color:deepskyblue;
+}
+footer .follow{
+    margin-top:20px;
+}
+footer .follow i{
+    padding-right: 4px;
+    color:white;
+    cursor: pointer;
+    font-size: 32px;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 4px;
+    display: flex;
+    margin: 2px;
+    cursor: pointer;
+    width: 60%;
+}
+footer .follow i:hover{
+    color:#088178;
+}
+.center{
+    text-align: center;
+}
